@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: lessons
+#
+#  id          :uuid             not null, primary key
+#  title       :string(50)       not null
+#  description :text
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 class LessonSerializer < ActiveModel::Serializer
-    attribute :id, :title, :description, :created_at
+  attributes :id, :title, :description, :created_at
 end
