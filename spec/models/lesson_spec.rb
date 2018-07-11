@@ -12,7 +12,7 @@
 require 'rails_helper'
 
 RSpec.describe Lesson, type: :model do
-  it 'is creatable' do 
+  it 'is creatable' do
     lesson = create(:lesson)
     first_lesson = Lesson.first
     expect(first_lesson.title).to eq(lesson.title)
